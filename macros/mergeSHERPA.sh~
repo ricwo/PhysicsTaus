@@ -1,0 +1,17 @@
+#!/bin/sh
+#==============================================================================
+
+if [ "$1" = "W" ]
+then
+   root -b -q 'macros/changeName.cpp(361324,361347)'
+    cd sherpa/
+    $taus/PhysicsNtuple/PhysicsTaus/macros/haddws-master/haddws 361324_out.root	31.81187 361325_out.root	5.78131 361326_out.root	14.23616 361327_out.root	3.87017 361328_out.root	0.83091 361329_out.root	0.47263 361330_out.root	0.53031 361331_out.root	0.14453 361332_out.root	0.06992 361333_out.root	0.12451 361334_out.root	0.04730 361335_out.root	0.02797 361336_out.root	0.01472 361337_out.root	0.00918 361338_out.root	0.00621 361339_out.root	0.00633 361340_out.root	0.00440 361341_out.root	0.00328 361342_out.root	0.00269 361343_out.root	0.00175 361344_out.root	0.00124 361345_out.root	0.00003 361346_out.root	0.00003 361347_out.root	0.00002 
+fi
+
+if [ "$1" = "Z" ]
+then
+   root -b -q 'macros/changeName.cpp(361420,361443)'
+    cd sherpa/
+    $taus/PhysicsNtuple/PhysicsTaus/macros/haddws-master/haddws 361420_out.root 361421_out.root 361422_out.root 361423_out.root 361424_out.root 361425_out.root 361426_out.root 361427_out.root 361428_out.root 361429_out.root 361430_out.root 361431_out.root 361432_out.root 361433_out.root 361434_out.root 361435_out.root 361436_out.root 361437_out.root 361438_out.root 361439_out.root 361440_out.root 361441_out.root 361442_out.root 361443_out.root 28.280540 8.668298 2.673107 1.303904 1.103261 0.309908 0.186123 0.216772 0.058229 0.029394 0.022116 0.013354 0.002890 0.002058 0.001312 0.003000 0.002618 0.001599 0.000640 0.000547 0.000325 0.000003 0.000004 0.000003 
+fi
+

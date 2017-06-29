@@ -1,0 +1,89 @@
+#include <TH1F.h>
+#include <TH2F.h>
+#include <THStack.h>
+#include <TLegend.h>
+#include <TFile.h>
+#include <TMath.h>
+#include <TLine.h>
+#include <TCanvas.h>
+#include <vector>
+#include <iostream>
+#include <sstream>
+#include <iterator>
+#include <set>
+#include <TLatex.h>
+#include <TPaveText.h>
+#include <TPad.h>
+#include <TEfficiency.h>
+#include <TDirectory.h>
+
+using namespace std;
+
+void plot2D(){
+
+  TFile *f = new TFile("Ztautau2M.root");
+  TFile *f1 = new TFile("Wplusmunu2M.root");
+  TFile *f2 = new TFile("Zmumu500k_1.root");
+
+  bool saveplots = true;
+  bool hist	 = true;
+
+  TGraph *line = new TGraph();
+  for( int i =1; i < 401; ++i ) line->SetPoint(i, i, i);
+
+  if (hist){
+    TCanvas *c0 = new TCanvas("c0");
+    gROOT->SetStyle("Plain");
+    gROOT->ForceStyle();
+    gStyle->SetOptStat("e"); 
+    gStyle->SetTitleFontSize(0.03);
+    gStyle->SetTitleX(0.5);
+    gStyle->SetTitleAlign(23);
+    hist_leg = new TLegend(0.75,0.65,0.97,0.82);
+    hist_leg->SetFillColor(0);
+    hist_leg->SetLineColor(1);
+    hist_leg->SetShadowColor(0);
+    hist_leg->SetTextSize(0.03);
+    hist_leg->SetTextFont(62);
+    TGaxis::SetMaxDigits(3); 
+
+    //TH2F *h		= (TH2F*)f->Get("361510/plotEventAlgs/taus/Twist_DPhi");
+    //TH2F *h    	= (TH2F*)f1->Get("361101/plotEventAlgs/taus/Twist_DPhi");
+    TH2F *h		= (TH2F*)f2->Get("361505/plotEventAlgs/taus/MT2vsMT3man");
+
+    int   NentriesPhiM	= (h->GetEntries());
+    //    h->GetXaxis()->SetTitle("M_{#mu#mu} [GeV]");
+    //h->GetYaxis()->SetTitle("M^{*}_{#mu#mu} [GeV]");
+    h->GetXaxis()->SetTitleSize(0.04);
+    h->GetYaxis()->SetTitleSize(0.05);
+    h->GetXaxis()->SetTitleOffset(1.15);
+    h->GetYaxis()->SetTitleOffset(1.);
+    h->GetXaxis()->CenterTitle(kFALSE);
+    h->GetYaxis()->CenterTitle(kFALSE);
+    h->Rebin2D(2,2);
+    h->GetXaxis()->SetRangeUser(0,400);
+    h->GetYaxis()->SetRangeUser(0,400);
+    c0->SetLogz();
+    c0->SetRightMargin(0.15);
+    c0->SetLeftMargin(0.12);
+    c0->SetBottomMargin(0.12);
+
+    h->Draw("COLZ");
+    line->SetLineStyle(2);
+    line->Draw("same");
+    TLatex Tl;
+    Tl.SetTextAlign(12);
+    Tl.SetTextSize(0.04);
+    Tl.DrawLatexNDC(0.15,0.85,"Z#rightarrow#mu#mu, ll final state");
+    Tl.DrawLatexNDC(0.15,0.8,Form("Correlation Factor %f", h->GetCorrelationFactor()));
+
+    //save plot
+    if (saveplots){
+      c0->SaveAs("plots/20161207/MT2vsMT3man.pdf");
+    }
+    
+  }
+
+
+}
+

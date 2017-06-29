@@ -1,0 +1,10 @@
+1479906275 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0000_out.root
+1518145887 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0001_out.root
+1136818044 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0002_out.root
+1348634021 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0003_out.root
+1220309357 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0004_out.root
+1457657222 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0005_out.root
+1392079030 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0006_out.root
+1524249514 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0007_out.root
+1332068516 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0008_out.root
+409797113 /eos/atlas/user/r/rustem/ntuples/flip-ntuple-1lep-2016-03-12-data_v04/job_0009_out.root

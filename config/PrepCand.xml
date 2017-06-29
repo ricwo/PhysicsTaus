@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<histograms>
+
+    <dirbase dirs="PrepCand" />
+
+    <hist key="NLepton" name="" title="">
+        <Xaxis bin="10" min="0.0" max="10.0" title="Number of leptons" />
+    </hist>
+    <hist key="NElec" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of electrons" />
+    </hist>
+    <hist key="NMuon" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of muons" />
+    </hist>
+    <hist key="NJet" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of jets" />
+    </hist>
+    <hist key="NTrack" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of tracks" />
+    </hist>
+    <hist key="NRecoPileup" name="" title="">
+        <Xaxis bin="80" min="0.0" max="80.0" title="Number of reconstructed pileup interactions" />
+    </hist>
+    <hist key="NTruePileup" name="" title="">
+        <Xaxis bin="80" min="0.0" max="80.0" title="Number of true pileup interactions" />
+    </hist>
+    <hist key="EventWeight" name="" title="">
+        <Xaxis bin="100" min="0.0" max="4.0" title="Event weight" />
+    </hist>
+
+    <hist key="Mll" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="m_{ll}" />
+    </hist> 
+    <hist key="Ptll" name="" title="">
+        <Xaxis bin="200" min="0.0" max="1.0e5" title="p_{T, ll}" />
+    </hist> 
+    <hist key="DRll" name="" title="">
+        <Xaxis bin="100" min="0.0" max="5.0" title="#Delta R(ll)" />
+    </hist> 
+    <hist key="DPhill" name="" title="">
+        <Xaxis bin="100" min="0.0" max="3.2" title="#Delta #phi(ll)" />
+    </hist> 
+
+    <hist key="LeadLepPt" name="" title="">
+        <Xaxis bin="200" min="0.0" max="1.0e5" title="Leading lepton p_{T} [MeV]" />
+    </hist> 
+    <hist key="SublLepPt" name="" title="">
+        <Xaxis bin="200" min="0.0" max="1.0e5" title="Sub-leading lepton p_{T} [MeV]" />
+    </hist> 
+
+    <hist key="LeadRecoTrackPt" name="" title="">
+        <Xaxis bin="200" min="0.0" max="1.0e5" title="Leading non-lepton track p_{T} [MeV]" />
+    </hist> 
+    <hist key="LeadFakeTrackPt" name="" title="">
+        <Xaxis bin="200" min="0.0" max="1.0e5" title="Leading fake track p_{T} [MeV]" />
+    </hist> 
+
+    <hist key="MET" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="E_{T, miss}" />
+    </hist> 
+    <hist key="MET_sum" name="" title="">
+        <Xaxis bin="100" min="0.0" max="1.0e6" title="#sum E_{T}" />
+    </hist> 
+
+    <hist key="MET_Track_n" name="" title="">
+        <Xaxis bin="1600" min="0.0" max="1.6e3" title="Number of tracks" />
+    </hist> 
+    <hist key="MET_Track" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T, miss}" />
+    </hist> 
+    <hist key="MET_Track_sum" name="" title="">
+        <Xaxis bin="100" min="0.0" max="1.0e6" title="#scale[0.8]{#sum} p_{T}" />
+    </hist> 
+
+    <hist key="MET_TrackPU_n" name="" title="">
+        <Xaxis bin="1600" min="0.0" max="1.6e3" title="Number of tracks" />
+    </hist> 
+    <hist key="MET_TrackPU" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T, miss}" />
+    </hist> 
+    <hist key="MET_TrackPU_sum" name="" title="">
+        <Xaxis bin="100" min="0.0" max="1.0e6" title="#scale[0.8]{#sum} p_{T}" />
+    </hist> 
+
+
+    <hist key="NBL" name="" title="">
+        <Xaxis bin="5" min="0.0" max="5.0" title="Number of B-layer hits" />
+    </hist>  
+    <hist key="ExpectBL" name="" title="">
+        <Xaxis bin="2" min="0.0" max="2.0" title="Expect B-layer hits" />
+    </hist> 
+    <hist key="NPIX" name="" title="">
+        <Xaxis bin="12" min="0.0" max="12.0" title="Number of pixel hits" />
+    </hist>  
+    <hist key="NPIXHole" name="" title="">
+        <Xaxis bin="5" min="0.0" max="5.0" title="Number of pixel holes" />
+    </hist>  
+    <hist key="NPIXPlusNDead" name="" title="">
+        <Xaxis bin="12" min="0.0" max="12.0" title="Number of pixel hits and dead sensors" />
+    </hist>  
+
+    <hist key="NSCT" name="" title="">
+        <Xaxis bin="30" min="0.0" max="30.0" title="Number of SCT hits" />
+    </hist>  
+    <hist key="NSCTHole" name="" title="">
+        <Xaxis bin="5" min="0.0" max="5.0" title="Number of SCT holes" />
+    </hist> 
+    <hist key="NSCTPlusNDead" name="" title="">
+        <Xaxis bin="30" min="0.0" max="30.0" title="Number of SCT hits and dead sensors" />
+    </hist> 
+ 
+    <hist key="NSIL" name="" title="">
+        <Xaxis bin="30" min="0.0" max="30.0" title="Number of pixel and SCT hits" />
+    </hist>  
+    <hist key="NSILHole" name="" title="">
+        <Xaxis bin="5" min="0.0" max="5.0" title="Number of pixel and SCT holes" />
+    </hist>
+     <hist key="NSILPlusNDead" name="" title="">
+        <Xaxis bin="30" min="0.0" max="30.0" title="Number of pixel and SCT hits and dead sensors" />
+    </hist> 
+ 
+    <hist key="NTRT" name="" title="">
+        <Xaxis bin="60" min="0.0" max="60.0" title="Number of TRT hits" />
+    </hist>   
+    <hist key="NTRTHL" name="" title="">
+        <Xaxis bin="20" min="0.0" max="20.0" title="Number of TRT HL hits" />
+    </hist>  
+
+    <hist key="D0" name="" title="">
+        <Xaxis bin="200" min="-10.0" max="10.0" title="d_{0} [mm]" />
+    </hist>
+    <hist key="D0Sig" name="" title="">
+        <Xaxis bin="200" min="-50.0" max="50.0" title="d_{0}/#sigma(d_{0})" />
+    </hist>
+    <hist key="Z0" name="" title="">
+        <Xaxis bin="800" min="-100.0" max="100.0" title="z_{0} [mm]" />
+    </hist>
+    <hist key="Z0Sig" name="" title="">
+        <Xaxis bin="200" min="-20.0" max="20.0" title="z_{0}/#sigma(z_{0})" />
+    </hist>
+    <hist key="Z0Sin" name="" title="">
+        <Xaxis bin="800" min="-100.0" max="100.0" title="z_{0} sin(#theta) [mm]" />
+    </hist>
+
+    <hist key="DiffR" name="" title="">
+        <Xaxis bin="100" min="0.0" max="10.0" title="" />
+    </hist>
+
+</histograms>

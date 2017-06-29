@@ -1,0 +1,3 @@
+bkg_keys: tops, rare, vv, ttw, ttz, zjets, wjets_mg
+sig_keys: tth
+oth_keys: tops_dilep

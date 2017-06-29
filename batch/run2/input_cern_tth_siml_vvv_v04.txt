@@ -1,0 +1,8 @@
+136657646 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361620.root
+148077658 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361621.root
+123892755 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361622.root
+125300177 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361623.root
+109039588 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361624.root
+82190306 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361625.root
+73747550 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361626.root
+59451532 /eos/escience/UniTexas/HSG8/multileptons_ntuple_run2/25ns_v4/Nominal/361627.root

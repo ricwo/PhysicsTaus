@@ -1,0 +1,96 @@
+#include <TH1F.h>
+#include <TH2F.h>
+#include <TH1.h>
+#include <THStack.h>
+#include <TLegend.h>
+#include <TFile.h>
+#include <TMath.h>
+#include <TLine.h>
+#include <TCanvas.h>
+#include <vector>
+#include <iostream>
+#include <sstream>
+#include <iterator>
+#include <set>
+#include <TLatex.h>
+#include <TPaveText.h>
+#include <TPad.h>
+#include <TEfficiency.h>
+#include <TDirectory.h>
+#include <TAttLine.h>
+#include <TGraph2D.h>
+#include <TH2Poly.h>
+#include <TMultiGraph.h>
+
+using namespace std;
+
+void poly(const string histname, int rebin = 4){
+  TFile *Z0 = new TFile("sherpa/Z.root");
+  TFile *W0 = new TFile("sherpa/W.root");
+  TH2F *hsig		= (TH2F*)Z0->Get(histname.c_str());
+  TH2F *hbkg		= (TH2F*)W0->Get(histname.c_str());
+  double intsig = hsig->Integral();
+  double intbkg = hbkg->Integral();
+  hsig->Scale(1 / intsig);
+  hbkg->Scale(1 / intbkg);
+  hsig->Rebin2D(rebin,rebin);
+  hbkg->Rebin2D(rebin,rebin);
+  TH2F *div	= (TH2F*)hsig->Clone("div");
+  int nx = div->GetXaxis()->GetNbins();
+  int ny = div->GetYaxis()->GetNbins();
+  double Nsig = hsig->Integral();
+  double Nbkg = hbkg->Integral();
+  cout << Nsig << endl;
+  cout << Nbkg << endl;
+  cout << nx << " " << ny << endl;
+  for( int i = 1; i <= nx; ++i ){
+    for( int j = 1; j <= ny; ++j ){
+      div->SetBinContent(i,j,0,0);
+      double c1 = hsig->GetBinContent(i,j);
+      double eff_sig = c1 / Nsig;;
+      if( c1 > 0 ){
+	double c2 = hbkg->GetBinContent(i,j);
+	double eff_bkg = c2 / Nbkg;
+	if( eff_sig > 0.0001 && eff_bkg > 0.0001 ){
+	  div->SetBinContent(i,j,eff_sig / eff_bkg);
+	}
+      }
+    }
+  }
+
+  TCanvas *c = new TCanvas("c","c",800,600);
+  gROOT->SetStyle("Plain");
+  gROOT->ForceStyle();
+  gStyle->SetOptStat(0); 
+  gStyle->SetTitleFontSize(0.03);
+  gStyle->SetTitleX(0.5);
+  gStyle->SetTitleAlign(23);
+  leg = new TLegend(0.83,0.75,1,0.90);
+  leg->SetFillColor(0);
+  leg->SetLineColor(1);
+  leg->SetShadowColor(0);
+  leg->SetTextSize(0.03);
+  leg->SetTextFont(62);
+  leg->SetFillStyle(0);
+  leg->SetBorderSize(0);
+  c->SetRightMargin(0.18);
+  c->SetLeftMargin(0.14);
+  c->SetBottomMargin(0.14);
+  c->SetLogz();
+  div->GetXaxis()->SetTitleSize(0.04);
+  div->GetXaxis()->SetLabelSize(0.03);
+  div->GetYaxis()->SetTitleSize(0.04);
+  div->GetYaxis()->SetLabelSize(0.03);
+  div->GetZaxis()->SetTitleSize(0.04);
+  div->GetZaxis()->SetLabelSize(0.03);
+  div->GetXaxis()->CenterTitle(kFALSE);
+  div->GetYaxis()->CenterTitle(kFALSE);
+  div->SetZTitle("#epsilon_{sig}/#epsilon_{bkg}");
+  div->GetXaxis()->SetRangeUser(0,300);
+  //  div->GetYaxis()->SetRangeUser(0,300);
+  div->Draw("colz");
+  TLatex Tl; Tl.SetTextAlign(12); Tl.SetTextSize(0.03);
+  Tl.DrawLatexNDC(0.17,0.85,"SHERPA Z#rightarrow#tau_{#mu}#tau_{h} (sig) vs W(#rightarrow#mu#nu)+jets (bkg)"); 
+  string savename = "plots/20170320/2D_"+histname+"_finer.pdf";
+  c->SaveAs(savename.c_str());
+}

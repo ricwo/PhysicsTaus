@@ -1,0 +1,198 @@
+
+// Base
+#include "PhysicsBase/Factory.h"
+
+// Data
+#include "PhysicsTaus/Utils.h"
+
+// Local
+#include "PlotEvent.h"
+
+REGISTER_ANP_OBJECT(AlgEvent,PlotEvent)
+
+using namespace std;
+
+//======================================================================================================
+Anp::PlotEvent::PlotEvent()
+{
+}
+
+//======================================================================================================
+void Anp::PlotEvent::PlotConf(const Registry &reg)
+{
+  //
+  // Read configuration
+  //
+  reg.Get("PlotEvent::Print",      fPrint      = false);
+  reg.Get("PlotEvent::ComputeMll", fComputeMll = false);
+
+  fCutEvent    = BookCut("CutEvent",    reg);
+  fCutElec     = BookCut("CutElec",     reg);
+  fCutJet      = BookCut("CutJet",      reg);
+  fCutMuon     = BookCut("CutMuon",     reg);
+  fCutTau      = BookCut("CutTau",      reg);
+
+  //
+  // Configure object to histogram variables by keys
+  // 
+  fHistEvent = BookHist(reg);
+  fHistElec  = BookHist(reg, "elec");
+  fHistMuon  = BookHist(reg, "muon");
+  fHistTau   = BookHist(reg, "tau");
+}
+
+//======================================================================================================
+bool Anp::PlotEvent::PlotInit()
+{
+  hMll = GetTH1("dilep_mll");
+
+  return true;
+}
+
+//======================================================================================================
+void Anp::PlotEvent::PlotDone()
+{
+  SaveCutsHists(GetDir());
+}
+
+//======================================================================================================
+void Anp::PlotEvent::PlotExec()
+{
+  /*
+    Process raw ntuple event
+   */
+  
+  if(fReco.IsValidEvent()) {
+    for(RecoEvent &reco: fReco.GetRef()) {
+      Ptr<CandEvent> cand = PrepCandEvent(reco);
+      
+      if(cand.valid()) {
+	//
+	// Save selected candidate event
+	//
+	reco.GetVec<CandEvent>().push_back(cand);
+
+	//
+	// Process selected candidate events
+	//
+	FillCandEvent(cand.ref());
+	PlotCandEvent(cand.ref());
+      }
+    }
+  }
+}
+
+//======================================================================================================
+Anp::Ptr<Anp::CandEvent> Anp::PlotEvent::PrepCandEvent(const RecoEvent &reco)
+{
+  /*
+    Select reconstructed objects and make candidate event
+   */
+
+  Ptr<CandEvent> cand = ObjectFactory<CandEvent>::Instance().CreateObject(Anp::CandEvent(reco, AlgEvent::GetName()));
+  cand->CopyVarsFrom(reco);
+
+  vector<Ptr<RecElec> > &elecs = cand->GetVec<RecElec>();
+  vector<Ptr<RecMuon> > &muons = cand->GetVec<RecMuon>();
+  vector<Ptr<RecJet > > &jets  = cand->GetVec<RecJet >();
+  vector<Ptr<RecTau > > &taus  = cand->GetVec<RecTau >();
+  vector<Ptr<Lepton> >  &leps  = cand->GetVec<Lepton >();
+
+  SelectObjects(reco.GetVec<RecMuon>(), muons, fCutMuon.ref());
+  SelectObjects(reco.GetVec<RecElec>(), elecs, fCutElec.ref());
+  SelectObjects(reco.GetVec<RecJet >(), jets,  fCutJet .ref());
+  SelectObjects(reco.GetVec<RecTau >(), taus,  fCutTau .ref());
+
+  for(Ptr<RecElec> &elec: elecs) {
+    leps.push_back(ObjectFactory<Lepton>::Instance().CreateObject(Anp::Lepton(elec)));
+  }
+
+  for(Ptr<RecMuon> &muon: muons) {
+    leps.push_back(ObjectFactory<Lepton>::Instance().CreateObject(Anp::Lepton(muon)));
+  }
+
+  return cand;
+}
+
+//======================================================================================================
+void Anp::PlotEvent::FillCandEvent(CandEvent &cand)
+{
+  /*
+    Compute variables for event and selected objects
+   */
+
+  vector<Ptr<Lepton> >  &leps  = cand.GetVec<Lepton >();
+  vector<Ptr<RecElec> > &elecs = cand.GetVec<RecElec>();
+  vector<Ptr<RecMuon> > &muons = cand.GetVec<RecMuon>();
+  vector<Ptr<RecJet > > &jets  = cand.GetVec<RecJet >();
+  vector<Ptr<RecTau > > &taus  = cand.GetVec<RecTau >();
+
+  cand.AddVar(Cut::NLepton,  leps .size());
+  cand.AddVar(Cut::NElec,    elecs.size());
+  cand.AddVar(Cut::NMuon,    muons.size());
+  cand.AddVar(Cut::NTau,     taus .size());
+  cand.AddVar(Cut::NJet,     jets .size());
+
+  //
+  // Compute variables and fill individual histograms
+  //
+  double mll = -10.0e3;
+
+  if(fComputeMll && leps.size() == 2) {
+    const Lepton &lep0 = leps.at(0).ref();
+    const Lepton &lep1 = leps.at(1).ref();
+    
+    const TLorentzVector l0 = lep0.GetFourMom().GetLV();
+    const TLorentzVector l1 = lep1.GetFourMom().GetLV();
+    
+    mll = (l0+l1).M();          
+  }
+
+  FillTH1(hMll, mll);
+  
+  cand.AddVar(Cut::Mll, mll);
+}
+
+//======================================================================================================
+void Anp::PlotEvent::PlotCandEvent(CandEvent &cand)
+{
+  /*
+    Plot event variables and object variables
+   */
+
+  if(!fCutEvent->PassCut(cand)) {
+    return;
+  }
+  
+  fHistEvent->FillHists(cand.GetVars(), cand.GetWeight());
+
+  //
+  // Plot selected objects
+  //
+  vector<Ptr<RecElec> > &elecs = cand.GetVec<RecElec>();
+  vector<Ptr<RecMuon> > &muons = cand.GetVec<RecMuon>();
+  vector<Ptr<RecTau> >  &taus  = cand.GetVec<RecTau >();
+
+  for(Ptr<RecElec> &elec: elecs) {
+    fHistElec->FillHists(elec->GetVars(), cand.GetWeight());    
+  }
+
+  for(Ptr<RecMuon> &muon: muons) {
+    fHistMuon->FillHists(muon->GetVars(), cand.GetWeight());    
+  }
+
+  for(Ptr<RecTau> &tau: taus) {
+    fHistTau->FillHists(tau->GetVars(), cand.GetWeight());
+  }
+
+  if(fDebug) {
+    log() << "PlotEvent::PlotCandEvent - print event" << endl
+	  << "   # of elecs: " << elecs.size() << endl
+	  << "   # of muons: " << muons.size() << endl
+	  << "   # of taus:  " << taus .size() << endl;
+
+    for(Ptr<RecTau> &tau: taus) {
+      cout << tau->GetVarsAsStr("   ") << endl;
+    }
+  }
+}

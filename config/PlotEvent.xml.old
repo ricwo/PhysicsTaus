@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<histograms>
+
+    <dirbase dirs="PlotEventHistKey" />
+
+    <hist key="NLepton" name="" title="">
+        <Xaxis bin="10" min="0.0" max="10.0" title="Number of leptons" />
+    </hist>
+    <hist key="NElec" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of electrons" />
+    </hist>
+    <hist key="NMuon" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of muons" />
+    </hist>
+    <hist key="NTau" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of taus" />
+    </hist>
+
+    <hist key="NTrack" name="" title="">
+      <Xaxis bin="15" min="0.0" max="15.0" title="Number of tracks" />
+    </hist>
+
+    <hist key="NJet" name="" title="">
+      <Xaxis bin="20" min="0.0" max="20.0" title="Number of jets" />
+    </hist>
+    <hist key="NJetBTag" name="" title="">
+        <Xaxis bin="20" min="0.0" max="20.0" title="Number of b-jets" />
+    </hist>
+    <hist key="EventWeight" name="" title="">
+        <Xaxis bin="100" min="0.0" max="4.0" title="Event weight" />
+    </hist>
+
+    <hist key="Pt" name="" title="">
+        <Xaxis bin="100" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+
+    <hist key="dilep_mll" name="" title="">
+        <Xaxis bin="100" min="0.0" max="200.0e3" title="di-lepton m_{ll} [MeV]" />
+    </hist> 
+    <hist key="Mll" name="" title="">
+        <Xaxis bin="100" min="0.0" max="200.0e3" title="Di-lepton m_{ll} [MeV]" />
+    </hist> 
+
+</histograms>

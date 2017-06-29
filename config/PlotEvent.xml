@@ -1,0 +1,2502 @@
+<?xml version="1.0" ?>
+<histograms>
+
+  <dirbase dirs="PlotEventHistKey" />
+
+
+  <hist key="DoLeadTau" name="" title="">
+    <Xaxis bin="2" min="-.5" max="1.5" title="DoLeadTau" />
+  </hist>  
+  <hist key="DoLeadMu" name="" title="">
+    <Xaxis bin="2" min="-.5" max="1.5" title="DoLeadMuon" />
+  </hist>  
+  <hist key="TauBDTScore" name="" title="">
+    <Xaxis bin="100" min="0." max="1" title="tau BDT score" />
+  </hist>  
+
+    <hist key="Delta" name="" title="">
+        <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist> 
+    <hist key="Gamma" name="" title="">
+        <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist> 
+    <hist key="Rho" name="" title="">
+        <Xaxis bin="200" min="-1" max="1" title="#rho" />
+    </hist> 
+
+
+    <hist key="kMuvskTau" name="" title="">
+        <Xaxis bin="40" min="-20" max="20" title="k_{#tau}" />
+        <Yaxis bin="40" min="-20" max="20" title="k_{#mu}" />
+    </hist> 
+    <hist key="mMuNu" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="m(#mu,#nu) [GeV]" />
+    </hist> 
+    <hist key="mTauNu" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="m(#tau,#nu) [GeV]" />
+    </hist> 
+    <hist key="mMuTau" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="m(#mu,#tau) [GeV]" />
+    </hist> 
+    <hist key="m2Hat" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="#hat{m}(#mu,#nu) [GeV]" />
+    </hist> 
+    <hist key="mHat" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="#hat{m}(#mu,#tau,#nu) [GeV]" />
+    </hist> 
+    <hist key="m3Hat" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="#sqrt{m_{#mu}^{2}+m_{#tau}^2 + m_{#nu}^2} [GeV]" />
+    </hist> 
+    <hist key="EtaNu" name="" title="">
+        <Xaxis bin="200" min="-10." max="10." title="#eta_{#nu}" />
+    </hist> 
+    <hist key="RhoNu" name="" title="">
+        <Xaxis bin="200" min="-1." max="1." title="#rho(#nu)" />
+    </hist> 
+    <hist key="mMuNuvsm2Hat" name="" title="">
+        <Yaxis bin="2000" min="0.0" max="2000" title="m(#mu,#nu) [GeV]" />
+        <Xaxis bin="2000" min="0.0" max="2000" title="#hat{m}(#mu,#nu) [GeV]" />
+    </hist>  
+    <hist key="mMuTauvsmMuNu" name="" title="">
+        <Yaxis bin="2000" min="0.0" max="2000" title="m(#mu,#tau) [GeV]" />
+        <Xaxis bin="2000" min="0.0" max="2000" title="m(#mu,#nu) [GeV]" />
+    </hist>  
+    <hist key="mHatvsm3Hat" name="" title="">
+        <Yaxis bin="2000" min="0.0" max="2000" title="#hat{m}(#mu,#tau,#nu) [GeV]" />
+        <Xaxis bin="2000" min="0.0" max="2000" title="#sqrt m_{#mu}^{2}+m_{#tau}^{2} + m_{#nu}^{2} [GeV]" />
+    </hist>  
+    <hist key="SinThetaStarvsSinThetaHat" name="" title="">
+        <Yaxis bin="200" min="-1" max="1." title="sin#theta^{*}" />
+	<Xaxis bin="200" min="-1" max="1." title="sin#hat{#theta}" />
+    </hist>  
+    <hist key="EtvsNu" name="" title="">
+        <Yaxis bin="2000" min="0" max="2000" title="E_{T}^{miss} [GeV]" />
+	<Xaxis bin="2000" min="0" max="2000" title="p_{#nu} [GeV]" />
+    </hist>  
+    <hist key="PhiEtvsPhiNu" name="" title="">
+        <Yaxis bin="200" min="0" max="2" title="#phi(E_{T}^{miss}) [#pi]" />
+	<Xaxis bin="200" min="0" max="2" title="#phi(#nu) [#pi]" />
+    </hist>  
+
+
+
+
+    <hist key="PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+
+    <hist key="PassGammaDelta" name="" title="">
+      <Xaxis bin="2" min="-.5" max="1.5" title="Pass #Gamma-#Delta cut" />
+    </hist>  
+
+    <hist key="ThreeD_RhoMvisMstar" name="" title="">
+      <Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+      <Yaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+      <Zaxis bin="200" min="-1" max="1" title="#rho" />
+    </hist>  
+
+    <hist key="RhoBinary" name="" title="">
+      <Xaxis bin="20" min="0" max="20" title="#Delta" />
+      <Yaxis bin="2" min="-.5" max="1.5" title="Fail [0], Pass [1]" />
+    </hist>  
+    <hist key="RhovsDelta" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="RhovsDeltaHasGamma" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+
+    <hist key="AtvsDelta" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="AtDotMETvsDelta" name="" title="">
+      <Yaxis bin="600" min="-300" max="300" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="SumcosvsDelta" name="" title="">
+      <Yaxis bin="400" min="-2" max="2" title="SumCos" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="DPhilMETvsDelta" name="" title="">
+      <Yaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="DPhilhvsDelta" name="" title="">
+      <Yaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="PhistarvsDelta" name="" title="">
+      <Yaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="PtMuvsDelta" name="" title="">
+      <Yaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+
+    <hist key="GammavsDelta" name="" title="">
+      <Yaxis bin="90" min="0" max="90" title="#Gamma" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+
+    <hist key="RhovsGamma" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="AtvsGamma" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="Mstar3vsGamma" name="" title="">
+      <Yaxis bin="200" min="0" max="200" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="Mstar3DivPtvsGamma" name="" title="">
+      <Yaxis bin="100" min="0" max="10" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="AtDotMETvsGamma" name="" title="">
+      <Yaxis bin="600" min="-300" max="300" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="SumcosvsGamma" name="" title="">
+      <Yaxis bin="400" min="-2" max="2" title="SumCos" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="DPhilMETvsGamma" name="" title="">
+      <Yaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="DPhilhvsGamma" name="" title="">
+      <Yaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="PhistarvsGamma" name="" title="">
+      <Yaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+    <hist key="PtMuvsGamma" name="" title="">
+      <Yaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+      <Xaxis bin="90" min="0" max="90" title="#Gamma" />
+    </hist>  
+
+
+    <hist key="MremvsMstar3" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MvisvsMstar2" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MvisvsMstar2HasDelta" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+    <hist key="AtvsMstar2" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PhistarvsMstar2" name="" title="">
+      <Yaxis bin="100" min="-7" max="3" title="log_{10}#phi^{*}_{#eta}" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MremstarvsMstar3" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MremvsMstar2" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MremstarvsMstar2" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MvisvsMstar2Sq" name="" title="">
+      <Yaxis bin="1600" min="0" max="160000" title="M^{2}_{vis}(#mu,#tau_{had}) [GeV^{2}]" />
+      <Xaxis bin="1600" min="0" max="160000" title="m^{*}(#mu,E_{T}^{miss}} [GeV^{2}]" />
+    </hist>  
+    <hist key="Mstar3vsMstar2" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PtAsymvsMstar2" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PhistarMstar2D" name="" title="">
+      <Yaxis bin="100" min="-7" max="3" title="log_{10}(#phi^{*}_{#eta})" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="SumcosMstar2D" name="" title="">
+      <Yaxis bin="400" min="-2." max="2." title="SumCos" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PtAsymMstar2D" name="" title="">
+      <Yaxis bin="200" min="-1." max="1." title="#rho" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PhiacopMstar2D" name="" title="">
+      <Yaxis bin="1000" min="0" max="1" title="#phi_{acop} [#pi]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3Mstar2D" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist> 
+    <hist key="AtMstar2D" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist> 
+    <hist key="PtRatioMstar2D" name="" title="">
+      <Yaxis bin="200" min="0" max="2" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist> 
+    <hist key="PtRatio" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Et_softTrk" name="" title="">
+        <Xaxis bin="400" min="0.0" max="400" title="E_{T}^{miss} (softTrk) [GeV]" />
+    </hist> 
+    <hist key="Et_softClus" name="" title="">
+        <Xaxis bin="400" min="0.0" max="400" title="E_{T}^{miss} (softClus) [GeV]" />
+    </hist> 
+    <hist key="Et_sumet" name="" title="">
+        <Xaxis bin="2000" min="0.0" max="2000" title="E_{T}^{miss} (sumet) [GeV]" />
+    </hist> 
+    <hist key="Et" name="" title="">
+        <Xaxis bin="400" min="0.0" max="400" title="E_{T}^{miss} (default) [GeV]" />
+    </hist> 
+    <hist key="PhistarAt2D" name="" title="">
+      <Yaxis bin="100" min="-7" max="3" title="log_{10}(#phi^{*}_{#eta})" />
+      <Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist>  
+    <hist key="MtPhistar2D" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="100" min="-3" max="7" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>  
+
+    <hist key="EtAt2D" name="" title="">
+      <Yaxis bin="400" min="0" max="400" title="E_{T}^{miss} (softClus) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi2Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi2PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+    <hist key="Roi2AtDotMetDivMet" name="" title="">
+    <Xaxis bin="600" min="-300" max="300" title="a_{T}#upointE_{T}^{miss}/|E_{T}^{miss}| [GeV]" />
+    </hist>  
+    <hist key="Roi2Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi2Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+   <hist key="Roi2SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="Roi2AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi2Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi2Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi2TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi2TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi2TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi2DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi2DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+   <hist key="Roi2Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi2Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="Roi2DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi2Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi2At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="Roi2SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi2Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi2PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi2PtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi2Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi2Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi2NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi2SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi2Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi2Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+
+    <hist key="Roi3PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+
+   <hist key="Roi3Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi3Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="Roi3Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi3Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+   <hist key="Roi3SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="Roi3AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi3Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi3Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi3TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi3TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi3TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi3DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi3DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="Roi3DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi3Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi3At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="Roi3SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi3Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi3PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi3PtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi3Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi3Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi3NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi3SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi3Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi3Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+    <hist key="Roi3AtDotMetDivMet" name="" title="">
+    <Xaxis bin="600" min="-300" max="300" title="a_{T}#upointE_{T}^{miss}/|E_{T}^{miss}| [GeV]" />
+    </hist>  
+    <hist key="Roi3Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+    <hist key="Roi4PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+   <hist key="Roi4Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi4Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="Roi4Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi4Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi4Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+   <hist key="Roi4SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="Roi4AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi4Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi4Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi4TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi4TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi4TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi4DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi4DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="Roi4DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi4Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi4At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="Roi4SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi4Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi4PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi4PtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi4Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi4Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi4NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi4SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi4Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi4Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+    <hist key="Roi5PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+   <hist key="Roi5Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi5Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="Roi5Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi5Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi5Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+   <hist key="Roi5SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="Roi5AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi5Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi5Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi5TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi5TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi5TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi5DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi5DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="Roi5DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi5Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi5At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="Roi5SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi5Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi5PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi5PtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi5Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi5Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi5NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi5SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi5Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi5Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+
+    <hist key="Roi6PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+   <hist key="Roi6Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi6Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="Roi6Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi6Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi6Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+   <hist key="Roi6SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="Roi6AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi6Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi6Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi6TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi6TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi6TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi6DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi6DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="Roi6DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi6Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="Roi6At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="Roi6SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi6Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi6PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi6PtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi6Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi6Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi6NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi6SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi6Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi6Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+    <hist key="PassGammaDeltaRhovsDelta" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="PassGammaDeltaPtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+   <hist key="PassGammaDeltaMrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="PassGammaDeltaMremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaMstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="PassGammaDeltaMstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="PassGammaDeltaMstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+   <hist key="PassGammaDeltaSingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="PassGammaDeltaAtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="PassGammaDeltaPhistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="PassGammaDeltaMstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaTwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="PassGammaDeltaTwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="PassGammaDeltaTwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="PassGammaDeltaDPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="PassGammaDeltaDPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="PassGammaDeltaDPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="PassGammaDeltaMt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaAt" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="PassGammaDeltaSingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaEt" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaPtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="PassGammaDeltaPtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaNjets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="PassGammaDeltaNjets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="PassGammaDeltaNjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="PassGammaDeltaSumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="PassGammaDeltaMvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="PassGammaDeltaMvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+
+    <hist key="NotPassGammaDeltaRhovsDelta" name="" title="">
+      <Yaxis bin="200" min="-1" max="1" title="#rho" />
+      <Xaxis bin="90" min="0" max="90" title="#Delta" />
+    </hist>  
+    <hist key="NotPassGammaDeltaPtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+   <hist key="NotPassGammaDeltaMrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="NotPassGammaDeltaMremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+   <hist key="NotPassGammaDeltaSingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+     <hist key="NotPassGammaDeltaAtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaPhistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="NotPassGammaDeltaMstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaTwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="NotPassGammaDeltaTwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaTwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaDPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaDPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaDPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaAt" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+     <hist key="NotPassGammaDeltaSingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaEt" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaPtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="NotPassGammaDeltaPtRatio" name="" title="">
+	<Xaxis bin="100" min="0" max="10" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaNjets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="NotPassGammaDeltaNjets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="NotPassGammaDeltaNjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="NotPassGammaDeltaSumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="NotPassGammaDeltaMvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+
+    <hist key="Roi1PtMu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+    <hist key="Roi1AtDotMetDivMet" name="" title="">
+    <Xaxis bin="600" min="-300" max="300" title="a_{T}#upointE_{T}^{miss}/|E_{T}^{miss}| [GeV]" />
+    </hist>  
+    <hist key="Roi1Mstar3DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,#tau_{had},E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+    <hist key="Roi1Mstar2DivPt" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="m^{*}(#mu,E_{T}^{miss})/p_{T}^{#tau}" />
+    </hist>  
+   <hist key="Roi1SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist> 
+   <hist key="Roi1Mrem" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{rem} [GeV]" />
+    </hist>  
+   <hist key="Roi1Mremstar" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}_{rem} [GeV]" />
+    </hist>  
+     <hist key="Roi1AtDotMet" name="" title="">
+	<Xaxis bin="6000" min="-3000" max="3000" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>  
+    <hist key="Roi1Phistar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Roi1Mstar3" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m^{*}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi1TwistMetHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+     <hist key="Roi1TwistLepMet" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi1TwistLepHad" name="" title="">
+	<Xaxis bin="50" min="0" max=".5" title="#Tau(#mu,#tau_{had}) [#pi]" />
+    </hist>  
+    <hist key="Roi1DPhiLepMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#mu,E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi1DPhiLepHad" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},#mu) [#pi]" />
+    </hist>  
+    <hist key="Roi1DPhiHadMet" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="#Delta#phi(#tau_{had},E_{T}^{miss}) [#pi]" />
+    </hist>  
+    <hist key="Roi1Mt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+     <hist key="Roi1SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Roi1Et" name="" title="">
+	<Xaxis bin="400" min="0" max="1600" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="Roi1PtRatio" name="" title="">
+	<Xaxis bin="1000" min="0" max="100" title="p_{T}^{#tau}/p_{T}^{#mu} [GeV]" />
+    </hist>  
+    <hist key="Roi1PtAsym" name="" title="">
+	<Xaxis bin="200" min="-1." max="1." title="#rho" />
+    </hist>  
+    <hist key="Roi1At" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist> 
+    <hist key="Roi1Njets" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}" />
+    </hist>  
+    <hist key="Roi1Njets25" name="" title="">
+	<Xaxis bin="20" min="-0.5" max="19.5" title="N_{jets}, p_{T} > 25 GeV" />
+    </hist>  
+
+    <hist key="Roi1NjetsMinusNtaus" name="" title="">
+	<Xaxis bin="25" min="-4.5" max="20.5" title="N_{jets} - N_{taus}" />
+    </hist>  
+
+    <hist key="Roi1SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Roi1Mvis" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Roi1Mvis_l_MET" name="" title="">
+	<Xaxis bin="2000" min="0" max="2000" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Roi1Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+
+
+    <hist key="SingleJetPt25" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} > 25 GeV [GeV]" />
+    </hist>  
+    <hist key="SingleJetPt" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="p_{T}^{jet} [GeV]" />
+    </hist>  
+    <hist key="Mstar2ROI1" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MstarAt2D" name="" title="">
+      <Yaxis bin="1000" min="0." max="1000" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="a_{T} [GeV]" />
+    </hist>  
+    <hist key="Pt_mu" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+    <hist key="Pt_e" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T} [GeV]" />
+    </hist> 
+    <hist key="Pt_tau" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+  <hist key="PassAtlasCuts" name="" title="">
+    <Xaxis bin="2" min="-.5" max="1.5" title="PassAtlasCuts" />
+  </hist>  
+  <hist key="PassAtlasCuts3" name="" title="">
+    <Xaxis bin="2" min="-.5" max="1.5" title="PassAtlasCuts" />
+  </hist>  
+    <hist key="SumCos" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="SumCos_r1" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="SumCos_r2" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="SumCos_r3" name="" title="">
+	<Xaxis bin="400" min="-2" max="2" title="SumCos" />
+    </hist>  
+    <hist key="Qeta" name="" title="">
+	<Xaxis bin="500" min="-2.5" max="2.5" title="Q_{#mu}#upoint|#eta^{#mu}|" />
+    </hist>  
+    <hist key="Qeta_r1" name="" title="">
+	<Xaxis bin="500" min="-2.5" max="2.5" title="Q_{#mu}#upoint|#eta^{#mu}|" />
+    </hist>  
+    <hist key="Qeta_r2" name="" title="">
+	<Xaxis bin="500" min="-2.5" max="2.5" title="Q_{#mu}#upoint|#eta^{#mu}|" />
+    </hist>  
+    <hist key="Qeta_r3" name="" title="">
+	<Xaxis bin="500" min="-2.5" max="2.5" title="Q_{#mu}#upoint|#eta^{#mu}|" />
+    </hist>  
+    <hist key="EtaVsMT2" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+	<Yaxis bin="250" min="0." max="2.5" title="|#eta^{#mu}|" />
+    </hist>  
+    <hist key="MT2vsMvis" name="" title="">
+      <Yaxis bin="500" min="0." max="500" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+      <Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+     <hist key="MvisMstar2cut" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mvis" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,#tau_{had}) [GeV]" />
+    </hist>  
+    <hist key="Mvis_l_MET" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mvis_r1" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mvis_r2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mvis_r3" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{vis}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="DPhiVsMstar2" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+	<Yaxis bin="100" min="0." max="1" title="#Delta#phi(E_{T}^{miss},l) [rad] / #pi" />
+    </hist>  
+    <hist key="DPhiVsMstar3" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="m^{*}(l#tau_{h}E_{T}^{miss}) [GeV]" />
+	<Yaxis bin="100" min="0." max="1" title="#Delta#phi(E_{T}^{miss},l) [rad] / #pi" />
+    </hist>  
+    <hist key="DPhiVsMT2" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+	<Yaxis bin="100" min="0." max="1" title="#Delta#phi(E_{T}^{miss},l) [rad] / #pi" />
+    </hist>  
+    <hist key="DPhiVsMT3" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="m_{T}(#mu,#tau_{had},E_{T}^{miss}) [GeV]" />
+	<Yaxis bin="100" min="0." max="1" title="#Delta#phi(E_{T}^{miss},l) [rad] / #pi" />
+    </hist>  
+  <hist key="EventPassTrig" name="" title="">
+    <Xaxis bin="2" min="-.5" max="1.5" title="EventPassesTrigger" />
+  </hist>  
+  <hist key="N_elec" name="" title="">
+    <Xaxis bin="1" min=".5" max="1.5" title="N of electrons in event that passed all cuts" />
+  </hist>  
+  <hist key="mu_e_OLR" name="" title="">
+	<Xaxis bin="2" min="-.5" max="1.5" title="e-#mu OLR bool" />
+    </hist>  
+    <hist key="mu_tau_OLR" name="" title="">
+	<Xaxis bin="2" min="-.5" max="1.5" title="#m-#tau OLR bool" />
+    </hist>  
+    <hist key="e_tau_OLR" name="" title="">
+	<Xaxis bin="2" min="-.5" max="1.5" title="e-#tau OLR bool" />
+    </hist>  
+    <hist key="M_mu_mu" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="M_{#mu#mu} [GeV]" />
+    </hist>  
+    <hist key="M_mu_e" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="M_{#mue} [GeV]" />
+    </hist>  
+    <hist key="M_e_e" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="M_{ee} [GeV]" />
+    </hist>  
+    <hist key="TauTruthMatch" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="RecTau has truth match" />
+    </hist>
+    <hist key="DPhi_match" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_no_match" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_match_r1" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_no_match_r1" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_match_r2" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_no_match_r2" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_match_r3" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="DPhi_no_match_r3" name="" title="">
+	<Xaxis bin="1000" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="AT_match" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_no_match" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_match_r1" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_no_match_r1" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_match_r2" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_no_match_r2" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_match_r3" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_no_match_r3" name="" title="">
+        <Xaxis bin="200" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="NusumPtVsMET" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="p_{T}^{#sum#nu} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="E_{T}^{miss} [GeV]" />
+    </hist>  
+    <hist key="MTcomp" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m_{T}^{man} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="m_{T}^{LV} [GeV]" />
+    </hist>  
+    <hist key="MT3_mu_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu,#tau_{had}_{h}E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MT3_e_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m_{T}^{e#tau_{h}E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3_mu_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m^{*}(#mu,#tau_{had}_{h}E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3_e_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m^{*}(e#tau_{h}E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MT2_mu_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MT2_e_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m_{T}^{eE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar2_mu_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar2_e_h_vsMtautau" name="" title="">
+        <Xaxis bin="500" min="0." max="500" title="M^{MC}_{#tau#tau} [GeV]" />
+	<Yaxis bin="500" min="0." max="500" title="m^{*}(eE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MT2vsMT3" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu,E_{T}^{miss}} (LV) [GeV]" />
+    </hist>  
+    <hist key="MT2vsMT3man" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="SinThetaRecoVsTruth" name="" title="">
+        <Yaxis bin="100" min="-10" max="0" title="log(1-sin#theta^{*}_{#eta})^{reco}" />
+	<Xaxis bin="100" min="-10" max="0" title="log(1-sin#theta^{*}_{#eta})^{truth}" />
+    </hist>  
+    <hist key="Mstar3man_M_mumu" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m^{*}(#mu#mu,E_{T}^{miss}) [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="M_{#mu#mu} [GeV]" />
+    </hist>  
+    <hist key="Mstar3_M_mumu" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m^{*}(#mu#mu,E_{T}^{miss}} (LV) [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="M_{#mu#mu} [GeV]" />
+    </hist>  
+    <hist key="MT3_mumu_vs_M_mumu" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu,E_{T}^{miss}) [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="M_{#mu#mu} [GeV]" />
+    </hist>  
+    <hist key="MT_mumu_vs_M_mumu" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m_{T}^{#mu#mu} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="M_{#mu#mu} [GeV]" />
+    </hist>  
+    <hist key="Mstar_M_mumu" name="" title="">
+        <Yaxis bin="500" min="0." max="500" title="m^{*}(#mu#mu} [GeV]" />
+	<Xaxis bin="500" min="0." max="500" title="M_{#mu#mu} [GeV]" />
+    </hist> 
+    <hist key="AT_add_MT_DPhi" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+
+    <hist key="AT_add_Mvis" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist> 
+    <hist key="AT_add_Mstar2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add_Mstar3" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add_MT2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add_DPhi" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add_SumCos" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add70sig_Mvis" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist> 
+    <hist key="AT_add70sig_Mstar2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add80sig_Mstar2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add80sig_Mstar2_70sig_DPhi" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add90sig_Mstar2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add70sig_Mstar3" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add70sig_MT2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add70sig_DPhi" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add70sig_SumCos" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add5bkg_Mvis" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist> 
+    <hist key="AT_add5bkg_Mstar2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add5bkg_Mstar3" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add5bkg_MT2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add5bkg_DPhi" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="AT_add5bkg_SumCos" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+
+    <hist key="Phi_MET_l_add" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="Twist_DPhi" name="" title="">
+        <Yaxis bin="100" min="0." max=".5" title="Twist [pi]" />
+	<Xaxis bin="100" min="0." max="1.0" title="DPhi (MET,l) [pi]" />
+    </hist>  
+    <hist key="Twist_MET_l" name="" title="">
+	<Xaxis bin="100" min="0" max=".5" title="twist [pi]" />
+    </hist>  
+    <hist key="Twist_MET_l_r1" name="" title="">
+	<Xaxis bin="100" min="0" max=".5" title="twist [pi]" />
+    </hist>  
+    <hist key="Twist_MET_l_r2" name="" title="">
+	<Xaxis bin="100" min="0" max=".5" title="twist [pi]" />
+    </hist>  
+    <hist key="Twist_MET_l_r3" name="" title="">
+	<Xaxis bin="100" min="0" max=".5" title="twist [pi]" />
+    </hist>  
+    <hist key="MT_DPhi" name="" title="">
+        <Yaxis bin="200" min="0." max="200.0" title="m_{T} [GeV]" />
+	<Xaxis bin="100" min="0." max="1.0" title="DPhi (MET,l) [pi]" />
+    </hist>  
+    <hist key="ATdotMET_tim_MT" name="" title="">
+	<Xaxis bin="20000" min="-1e6" max="1e6" title="ATdotMET * MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_tim_MT_r1" name="" title="">
+	<Xaxis bin="20000" min="-1e6" max="1e6" title="ATdotMET * MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_tim_MT_r2" name="" title="">
+	<Xaxis bin="20000" min="-1e6" max="1e6" title="ATdotMET * MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_tim_MT_r3" name="" title="">
+	<Xaxis bin="20000" min="-1e6" max="1e6" title="ATdotMET * MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_div_MT" name="" title="">
+	<Xaxis bin="4000" min="-200" max="200" title="ATdotMET / MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_div_MT_r1" name="" title="">
+	<Xaxis bin="4000" min="-200" max="200" title="ATdotMET / MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_div_MT_r2" name="" title="">
+	<Xaxis bin="4000" min="-200" max="200" title="ATdotMET / MT [GeV]" />
+    </hist>  
+    <hist key="ATdotMET_div_MT_r3" name="" title="">
+	<Xaxis bin="4000" min="-200" max="200" title="ATdotMET / MT [GeV]" />
+    </hist>  
+    <hist key="MT2_ATdotMET" name="" title="">
+        <Xaxis bin="4000" min="-20000" max="20000.0" title="ATdotMET [GeV^2]" />
+	<Yaxis bin="200" min="0." max="200.0" title="MT(2) [GeV]" />
+    </hist>  
+    <hist key="Phi_MET_l" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="Phi_MET_l_r1" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="Phi_MET_l_r2" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="Phi_MET_l_r3" name="" title="">
+	<Xaxis bin="100" min="0" max="1" title="Phi MET l [pi]" />
+    </hist>  
+    <hist key="Mstar_no_cut" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{T} / SinTheta [GeV]" />
+    </hist>  
+    <hist key="Mstar_no_cut_r1" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{T} / SinTheta [GeV]" />
+    </hist>  
+    <hist key="Mstar_no_cut_r2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{T} / SinTheta [GeV]" />
+    </hist>  
+    <hist key="Mstar_no_cut_r3" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m_{T} / SinTheta [GeV]" />
+    </hist>  
+    <hist key="Mstar2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar2_r1" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar2_r2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar2_r3" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3Mstar2cut" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(lhE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(lhE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3_r1" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(lhE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3_r2" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(lhE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="Mstar3_r3" name="" title="">
+	<Xaxis bin="400" min="0" max="400" title="m^{*}(lhE_{T}^{miss}) [GeV]" />
+    </hist>  
+    <hist key="MT_1_2" name="" title="">
+        <Xaxis bin="200" min="0" max="200.0" title="m_{T} 2 [GeV]" />
+	<Yaxis bin="200" min="0." max="200.0" title="m_{T} 1 [GeV]" />
+    </hist>  
+    <hist key="MT3_2" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="MT3" name="" title="">
+	<Xaxis bin="200" min="0" max="200" title="m_{T} [GeV]" />
+    </hist>  
+    <hist key="M_MT_div_SinTheta" name="" title="">
+        <Xaxis bin="1000" min="0" max="200.0" title="M_T / sintheta [GeV]" />
+	<Yaxis bin="1000" min="0." max="200.0" title="M [GeV]" />
+    </hist>  
+    <hist key="AThatdotMET_add" name="" title="">
+	<Xaxis bin="2000" min="-1e5" max="1e5" title="a_{T}#upointE_{T}^{miss} [MeV^{2}]" />
+    </hist>  
+    <hist key="AThatdotMET" name="" title="">
+	<Xaxis bin="2000" min="-1e5" max="1e5" title="a_{T}#upointE_{T}^{miss} [MeV^{2}]" />
+    </hist>  
+    <hist key="AThatdotMET_r1" name="" title="">
+	<Xaxis bin="2000" min="-1e5" max="1e5" title="a_{T}#upointE_{T}^{miss} [MeV^{2}]" />
+    </hist>  
+    <hist key="AThatdotMET_r2" name="" title="">
+	<Xaxis bin="2000" min="-1e5" max="1e5" title="a_{T}#upointE_{T}^{miss} [MeV^{2}]" />
+    </hist>  
+    <hist key="AThatdotMET_r3" name="" title="">
+	<Xaxis bin="2000" min="-1e5" max="1e5" title="a_{T}#upointE_{T}^{miss} [MeV^{2}]" />
+    </hist>  
+   <hist key="MET_PhiStar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="1000" min="0." max="1e3" title="MET [GeV]" />
+    </hist>  
+   <hist key="MET_PhiStar_r1" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="1000" min="0." max="1e3" title="MET [GeV]" />
+    </hist>  
+   <hist key="MET_PhiStar_r2" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="1000" min="0." max="1e3" title="MET [GeV]" />
+    </hist>  
+   <hist key="MET_PhiStar_r3" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="1000" min="0." max="1e3" title="MET [GeV]" />
+    </hist>  
+    <hist key="MT_MET_add" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="MT_MET_add_r1" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="MT_MET_add_r2" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="MT_MET_add_r3" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="M_lh" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_r1" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_r2" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_r3" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_no_cut" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_no_cut_r1" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_no_cut_r2" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+    <hist key="M_lh_no_cut_r3" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="M_lh [GeV]" />
+    </hist>
+
+    <hist key="Mjet" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjet_r1" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjet_r2" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjet_r3" name="" title="">
+        <Xaxis bin="1000" min="0." max="1000" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjetl" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjetl_r1" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjetl_r2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mjetl_r3" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="PhiStar" name="" title="">
+        <Xaxis bin="1400" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="PhiStar_r1" name="" title="">
+        <Xaxis bin="1400" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="PhiStar_r2" name="" title="">
+        <Xaxis bin="1400" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="PhiStar_r3" name="" title="">
+        <Xaxis bin="1400" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="Mljet" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mljet_r1" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mljet [GeV]" />
+    </hist>
+    <hist key="Mtljet" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mtljet [GeV]" />
+    </hist>
+    <hist key="Mtljet_r1" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="Mtljet [GeV]" />
+    </hist>
+    <hist key="PhiStarDivATdotMET" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2" title="phistar / atdotmet [1/GeV^2]" />
+    </hist>
+    <hist key="PhiStarDivATdotMET_r1" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2" title="phistar / atdotmet [1/GeV^2]" />
+    </hist>
+    <hist key="ATdotMETdivPhiStar_r1" name="" title="">
+        <Xaxis bin="2000" min="-1000." max="1000" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="ATdotMETtimesPhiStar_r1" name="" title="">
+        <Xaxis bin="2000" min="-100." max="100" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="ATdotMETdivPhiStar" name="" title="">
+        <Xaxis bin="2000" min="-1000." max="1000" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="ATdotMETtimesPhiStar" name="" title="">
+        <Xaxis bin="2000" min="-100." max="100" title="a_{T} [GeV]" />
+    </hist>
+   <hist key="ATdotMET_PhiStar" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+   <hist key="ATdotMET_PhiStar_r1" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+    <hist key="ATdotMET_MT" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T} [GeV]" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+    <hist key="ATdotMET_MT_r1" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T} [GeV]" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+    <hist key="ATdotMET_MT_r2" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T} [GeV]" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+    <hist key="ATdotMET_MT_r3" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T} [GeV]" />
+	<Yaxis bin="2000" min="-1e3" max="1e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}" />
+    </hist>  
+    <hist key="AT" name="" title="">
+        <Xaxis bin="20000" min="0." max="2000" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="MT" name="" title="">
+        <Xaxis bin="800" min="0." max="800" title="m_{T} [GeV]" />
+    </hist>
+    <hist key="AT_r1" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="MT_r1" name="" title="">
+        <Xaxis bin="800" min="0." max="800" title="m_{T} [GeV]" />
+    </hist>
+    <hist key="AT_r2" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a_{T} [GeV]" />
+    </hist>
+    <hist key="MT_r2" name="" title="">
+        <Xaxis bin="800" min="0." max="800" title="m_{T} [GeV]" />
+    </hist>
+    <hist key="AT_r3" name="" title="">
+        <Xaxis bin="2000" min="0." max="200" title="a{T} [GeV]" />
+    </hist>
+    <hist key="MT_r3" name="" title="">
+        <Xaxis bin="800" min="0." max="800" title="m_{T} [GeV]" />
+    </hist>
+    <hist key="Alpha" name="" title="">
+        <Xaxis bin="1400" min="-10" max="4" title="1/\alpha [rad^{-1}]" />
+    </hist>
+    <hist key="Beta" name="" title="">
+        <Xaxis bin="5000" min="-4" max="1" title="1/\beta [rad^{-1}]" />
+    </hist>
+    <hist key="AlphaPt" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="p_{T} [GeV]" />
+	<Yaxis bin="1400" min="-10." max="4." title="1/\alpha [rad^{-1}]" />
+    </hist>  
+    <hist key="BetaMET" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="MET [GeV]" />
+	<Yaxis bin="5000" min="-4." max="1." title="1/\beta [rad^{-1}]" />
+    </hist>  
+    <hist key="MT_MET_l" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+
+    <hist key="MET_mT" name="" title="">
+        <Xaxis bin="1000" min="0" max="100" title="m_{T} [GeV]" />
+	<Yaxis bin="1000" min="0." max="100" title="MET [GeV]" />
+    </hist>  
+
+    <hist key="ATdotMET" name="" title="">
+        <Xaxis bin="20000" min="-10e3" max="10e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>
+    <hist key="MT_MET_l_r1" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="ATdotMET_r1" name="" title="">
+        <Xaxis bin="20000" min="-10e3" max="10e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>
+    <hist key="MT_MET_l_r2" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="ATdotMET_r2" name="" title="">
+        <Xaxis bin="20000" min="-10e3" max="10e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>
+    <hist key="MT_MET_l_r3" name="" title="">
+        <Xaxis bin="2000" min="0" max="200" title="m_{T}(#mu,E_{T}^{miss}) [GeV]" />
+    </hist>
+    <hist key="ATdotMET_r3" name="" title="">
+        <Xaxis bin="20000" min="-10e3" max="10e3" title="a_{T}#upointE_{T}^{miss} [GeV^{2}]" />
+    </hist>
+    <hist key="PassPhiCutTau" name="" title="">
+        <Xaxis bin="2" min="-0.5" max="1.5" title="Taus that pass cut on phistar" />
+    </hist>
+    <hist key="DeltaR_elec_mu" name="" title="">
+        <Xaxis bin="7000" min="0" max="7" title="testhist0" />
+    </hist>
+    <hist key="Et_cross_t_semilep" name="" title="">
+        <Xaxis bin="4000" min="-2e5" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_dot_t_semilep" name="" title="">
+        <Xaxis bin="4000" min="-2e5" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_cross_t_abs_semilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_dot_t_abs_semilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_semilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_cross_t_dilep" name="" title="">
+        <Xaxis bin="4000" min="-2e5" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_dot_t_dilep" name="" title="">
+        <Xaxis bin="4000" min="-2e5" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_cross_t_abs_dilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_dot_t_abs_dilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_dilep" name="" title="">
+        <Xaxis bin="2000" min="0" max="2e5" title="et" />
+    </hist>
+    <hist key="Et_phi_dilep" name="" title="">
+        <Xaxis bin="640" min="-3.2" max="3.2" title="et" />
+    </hist>
+    <hist key="Et_phi_semilep" name="" title="">
+        <Xaxis bin="640" min="-3.2" max="3.2" title="et" />
+    </hist>
+    <hist key="Cos_Et_t_semilep" name="" title="">
+        <Xaxis bin="200" min="-1." max="1." title="et" />
+    </hist>
+    <hist key="Cos_Et_t_dilep" name="" title="">
+        <Xaxis bin="200" min="-1." max="1." title="et" />
+    </hist>
+    <hist key="Arccos_Et_t_semilep" name="" title="">
+        <Xaxis bin="320" min="0" max="3.2" title="et" />
+    </hist>
+    <hist key="Arccos_Et_t_dilep" name="" title="">
+        <Xaxis bin="320" min="0" max="3.2" title="et" />
+    </hist>
+    <hist key="LogCos_Et_t_semilep" name="" title="">
+        <Xaxis bin="1000" min="-10" max="0" title="et" />
+    </hist>
+    <hist key="LogCos_Et_t_dilep" name="" title="">
+        <Xaxis bin="1000" min="-10" max="0" title="et" />
+    </hist>
+    <hist key="TestHist0" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist1" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist2" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist3" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist4" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist5" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="TestHist6" name="" title="">
+        <Xaxis bin="2000" min="-10" max="10" title="testhist0" />
+    </hist>
+    <hist key="RecTausTruthMatched" name="" title="">
+        <Xaxis bin="2" min="-0.5" max="1.5" title="dihad taus that are truth matched after phsitarcut" />
+    </hist>
+    <hist key="NLepton" name="" title="">
+        <Xaxis bin="10" min="0.0" max="10.0" title="Number of leptons" />
+    </hist>
+    <hist key="PhiStarEta" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_truth" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_truth_no_sin" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_l_tau" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_truth_l_tau" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_truth_l_tau_no_sin" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="Mratio" name="" title="">
+        <Xaxis bin="200" min="0" max="2.0" title="mratio" />
+    </hist>
+    <hist key="Mratio_l_tau" name="" title="">
+        <Xaxis bin="200" min="0" max="2.0" title="mratio" />
+    </hist>
+    <hist key="DeltaRTruthDaughter" name="" title="">
+        <Xaxis bin="100" min="0" max="1.0" title="deltaR" />
+    </hist>
+    <hist key="NTau" name="" title="">
+        <Xaxis bin="10" min="0" max="10" title="Number of taus / event" />
+    </hist>
+    <hist key="NDileps" name="" title="">
+        <Xaxis bin="2" min="-0.5" max="1.5" title="Number of elecs and muons in dilep state" />
+    </hist>
+    <hist key="HasRecoLinkHadTau" name="" title="">
+        <Xaxis bin="2" min="-0.5" max="1.5" title="Tau has reco link" />
+    </hist>
+    <hist key="HasRecoLinkLepTau" name="" title="">
+        <Xaxis bin="2" min="-0.5" max="1.5" title="Tau has reco link" />
+    </hist>
+    <hist key="M_truth_tau_tau" name="" title="">
+        <Xaxis bin="1000" min="0.0" max="1000.0e3" title="Truth M_tau_tau" />
+    </hist>
+    <hist key="M_obs_tau_tau" name="" title="">
+        <Xaxis bin="1000" min="0.0" max="1000.0e3" title="Truth M_tau_tau" />
+    </hist>
+    <hist key="M_obs_had_had" name="" title="">
+        <Xaxis bin="200" min="0.0" max="200.0e3" title="Obs M_tau_tau" />
+    </hist>
+    <hist key="M_obs_lep_had" name="" title="">
+        <Xaxis bin="1000" min="0.0" max="1000.0e3" title="Obs M_lep_had" />
+    </hist>
+    <hist key="NElec" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of electrons" />
+    </hist>
+    <hist key="NNuElec" name="" title="">
+        <Xaxis bin="6" min="-.5" max="5.5" title="Number of nu in elec dilep state" />
+    </hist>
+    <hist key="NNuMu" name="" title="">
+        <Xaxis bin="6" min="-.5" max="5.5" title="Number of nu mu dilep final state" />
+    </hist>
+    <hist key="NTruth" name="" title="">
+        <Xaxis bin="30" min="0.0" max="30.0" title="Number of truth parts" />
+    </hist>
+    <hist key="NMuonsInDilep" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number of Muons in Dilep Final State" />
+    </hist>
+    <hist key="NDihad" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NDilep" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NSemilep" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NSemilepMu" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NSemilepEl" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NMixed" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NJustMu" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NJustEl" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number dihad decays" />
+    </hist>
+    <hist key="NElecsInDilep" name="" title="">
+        <Xaxis bin="1" min="-.5" max="0.5" title="Number of Elecs in Dilep Final State" />
+    </hist>
+    <hist key="MatchTruthParticlePDG" name="" title="">
+        <Xaxis bin="43" min="-21.5" max="21.5" title="Match Truth Part PDGID" />
+    </hist>
+    <hist key="MatchTruthParticleDR" name="" title="">
+        <Xaxis bin="50" min="0." max="5." title="Match Truth Part DR" />
+    </hist>
+    <hist key="MatchTruthHadronicTau" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Match Truth Hadronic Tau bool" />
+    </hist>
+    <hist key="MatchTruthLepton" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Match Truth Light Lepton bool" />
+    </hist>
+    <hist key="IsTauPionNuDecay" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Tau decayed into charged pion and tau neutrino" />
+    </hist>
+    <hist key="MatchTruthLeptonicTau" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Match Truth Leptonic Tau bool" />
+    </hist>
+    <hist key="NTrack" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of tracks" />
+    </hist>
+    <hist key="JetBDTSigMedium" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="BDT Medium" />
+    </hist>
+    <hist key="TruthOrigin" name="" title="">
+       <Xaxis bin="43" min="-21.5" max="21.5" title="Truth Origin PDGID" />
+    </hist>
+    <hist key="JetBDTSigTight" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="BDT Tight" />
+    </hist>
+    <hist key="IsHadronicTau" name="" title="">
+        <Xaxis bin="2" min="-.5" max="1.5" title="Is Hadronic Tau bool" />
+    </hist>
+    <hist key="Nfinal" name="" title="">
+        <Xaxis bin="6" min="0.0" max="6.0" title="Type of final state" />
+    </hist>
+    <hist key="NIsHadronicTau" name="" title="">
+        <Xaxis bin="2" min="0.0" max="2.0" title="Is hadronic tau bool" />
+    </hist>
+    <hist key="NMuon" name="" title="">
+        <Xaxis bin="15" min="0.0" max="15.0" title="Number of muons" />
+    </hist>
+    <hist key="NJetBTag" name="" title="">
+        <Xaxis bin="20" min="0.0" max="20.0" title="Number of b-jets" />
+    </hist>
+    <hist key="EventWeight" name="" title="">
+        <Xaxis bin="100" min="0.0" max="4.0" title="Event weight" />
+    </hist>
+
+    <hist key="Pt" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    
+
+    <hist key="Pt_semilep_had" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_semilep_lep" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dilep" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dihad" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta_semilep_had" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_semilep_lep" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_dilep" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_dihad" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_semilep_had" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_semilep_lep" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_dilep" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_dihad" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="PhiStarEta_semilep" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_dilep" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_dihad" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="Phi_acop_semilep" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dihad" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dilep" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_semilep" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dihad" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dilep" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_semilep" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dihad" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dilep" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="At_semilep" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dilep" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dihad" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist>     
+
+    <hist key="Pt_semilep_had_bkg" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_semilep_lep_bkg" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dilep_bkg" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dihad_bkg" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta_semilep_had_bkg" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_semilep_lep_bkg" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_dilep_bkg" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_dihad_bkg" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_semilep_had_bkg" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_semilep_lep_bkg" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_dilep_bkg" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_dihad_bkg" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="PhiStarEta_semilep_bkg" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}(#phi^{*}_{#eta})" />
+    </hist>
+    <hist key="PhiStarEta_dilep_bkg" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_dihad_bkg" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="Phi_acop_semilep_bkg" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dihad_bkg" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dilep_bkg" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_semilep_bkg" name="" title="">
+        <Xaxis bin="2000" min="-2." max="2." title="log_{10}sin#theta^{*}_{#eta}" />
+    </hist> 
+    <hist key="Sin_theta_alt_semilep_bkg" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dihad_bkg" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dilep_bkg" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist>
+    <hist key="Sin_theta_alt_dilep_bkg" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_semilep_bkg" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dihad_bkg" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dilep_bkg" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="At_semilep_bkg" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dilep_bkg" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dihad_bkg" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist>     
+
+    <hist key="Pt_semilep_had_bkg_truth" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_semilep_lep_bkg_truth" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta_semilep_had_bkg_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_semilep_lep_bkg_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_semilep_had_bkg_truth" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_semilep_lep_bkg_truth" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist>
+    <hist key="Eta_abs_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_abs_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="500" min="0." max="5.0" title="#eta" />
+    </hist> 
+    <hist key="PhiStarEta_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="log_{10}#phi^{*}_{#eta}" />
+    </hist>
+    <hist key="PhiStarEta_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="PhiStarEta_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="140" min="-7.0" max="7.0" title="phi*" />
+    </hist>
+    <hist key="Phi_acop_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Phi_acop_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_alt_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="2000" min="-2." max="0." title="#phi" />
+    </hist> 
+    <hist key="Sin_theta_alt_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="1200" min="-10." max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7." max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="DPhi_sin_theta_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="900" min="-7.0" max="2." title="#phi" />
+    </hist> 
+    <hist key="At_semilep_bkg_truth" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dilep_bkg_truth" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dilep_prompt_bkg_truth" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist> 
+    <hist key="At_dihad_bkg_truth" name="" title="">
+        <Xaxis bin="1000" min="0" max="100.0e3" title="a_{T}" />
+    </hist>     
+
+
+
+    <hist key="Pt_e_reco" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_mu_reco" name="" title="">
+        <Xaxis bin="200" min="0.0" max="2.e2" title="p_{T}^{#mu} [GeV]" />
+    </hist> 
+    <hist key="Pt_tau_reco" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.e2" title="p_{T}^{#tau_{had}} [GeV]" />
+    </hist> 
+    <hist key="Pt_e_truth" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_mu_truth" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_tau_truth" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_had_truth" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_e_reco" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_mu_reco" name="" title="">
+        <Xaxis bin="60" min="-3.0" max="3.0" title="#eta^{#mu}" />
+    </hist> 
+    <hist key="Eta_tau_reco" name="" title="">
+        <Xaxis bin="60" min="-3.0" max="3.0" title="#eta^{#tau_{had}}" />
+    </hist> 
+    <hist key="Eta_e_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_mu_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_tau_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_had_truth" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Pt_e_match" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Pt_mu_match" name="" title="">
+        <Xaxis bin="400" min="0.0" max="2.0e5" title="p_{T} [MeV]" />
+    </hist> 
+    <hist key="Eta_e_match" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Eta_mu_match" name="" title="">
+        <Xaxis bin="100" min="-5.0" max="5.0" title="#eta" />
+    </hist> 
+    <hist key="Phi_M_fraction_had_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>     
+    <hist key="Phi_M_fraction_sub_had_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>       
+    <hist key="Phi_M_fraction_l_tau" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="Phi_acop_difference_M_fraction_had_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop difference obs - truth" />
+    </hist>  
+    <hist key="Phi_acop_difference_M_fraction_lep_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop difference obs - truth" />
+    </hist>      
+    <hist key="Phi_acop_difference_M_fraction_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop difference obs - truth" />
+    </hist>          
+    <hist key="Phi_M_fraction_alt_had_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="Phi_M_fraction_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="Phi_M_fraction_sub_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="Phi_M_fraction_alt_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="Phi_M_fraction_lep_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>     
+    <hist key="Phi_M_fraction_sub_lep_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>       
+    <hist key="Phi_M_fraction_lep_lep_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="140" min="-7." max="7." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>    
+    <hist key="Phi_M_fraction_alt_lep_had" name="" title="">
+        <Xaxis bin="200" min="0" max="2." title="m^{obs.}_{#mu,#tau_{had}_{had}}/m^{MC}_{#tau#tau}" />
+	<Yaxis bin="100" min="-7." max="3." title="log_{10}(#phi^{*}_{#eta, #mu,#tau_{had}_{had}})" />
+    </hist>      
+    <hist key="DPhi_pT_fraction_had_had" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist> 
+    <hist key="DPhi_pT_fraction_had_l_tau" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist> 
+    <hist key="DPhi_pT_fraction_lep_l_tau" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist> 
+    <hist key="DPhi_pT_fraction_lep_lep" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist> 
+    <hist key="DPhi_pT_fraction_lep_had" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist>
+    <hist key="DPhi_pT_fraction_lep_lep_had" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist>
+    <hist key="DPhi_pT_fraction_had_lep_had" name="" title="">
+	<Xaxis bin="200" min="0." max="2." title="p_{T}^{#mu(obs.)}/p_{T}^{#tau(MC)}" />
+        <Yaxis bin="80" min="-7." max="1." title="log#Delta#phi_{#mu^{obs.}#tau^{MC}}" />
+    </hist> 
+    <hist key="Pt_fraction_had_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist>  
+    <hist key="Pt_fraction_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist>  
+    <hist key="Pt_fraction_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist> 
+    <hist key="Pt_fraction_lep_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist> 
+    <hist key="Pt_fraction_had_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist> 
+    <hist key="Pt_fraction_lep_vs_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist> 
+    <hist key="Pt_fraction_lep_vs_had_l_tau" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="pT fraction positive tau" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction negative tau" />
+    </hist> 
+    <hist key="M_fraction_pT_fraction_had_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_had_l_tau" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_lep_l_tau" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_lep_lep" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_lep_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="M_fraction_pT_fraction_had_lep_had" name="" title="">
+        <Xaxis bin="200" min="0." max="2." title="mass fraction" />
+	<Yaxis bin="200" min="0." max="2." title="pT fraction" />
+    </hist>  
+    <hist key="Phi_acop_truth_obs_had_had" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="phi acop truth" />
+	<Yaxis bin="100" min="-7." max="3." title="phi acop obs" />
+    </hist>  
+    <hist key="Phi_acop_truth_obs_lep_had" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="phi acop truth" />
+	<Yaxis bin="100" min="-7." max="3." title="phi acop obs" />
+    </hist>  
+    <hist key="Phi_acop_truth_obs_lep_lep" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="phi acop truth" />
+	<Yaxis bin="100" min="-7." max="3." title="phi acop obs" />
+    </hist>  
+    <hist key="DPhi_2D_had_had" name="" title="">
+        <Xaxis bin="120" min="-9." max="3." title="dphi pos" />
+	<Yaxis bin="120" min="-9." max="3." title="dphi neg" />
+    </hist>  
+    <hist key="DPhi_2D_lep_had" name="" title="">
+        <Xaxis bin="120" min="-9." max="3." title="dphi pos" />
+	<Yaxis bin="120" min="-9." max="3." title="dphi neg" />
+    </hist>  
+    <hist key="DPhi_2D_mu_lep_lep" name="" title="">
+        <Xaxis bin="120" min="-9." max="3." title="dphi pos" />
+	<Yaxis bin="120" min="-9." max="3." title="dphi neg" />
+    </hist>  
+    <hist key="DPhi_2D_elec_lep_lep" name="" title="">
+        <Xaxis bin="120" min="-9." max="3." title="dphi pos" />
+	<Yaxis bin="120" min="-9." max="3." title="dphi neg" />
+    </hist>  
+    <hist key="DPhi_tau_daughter_mu" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_hadron" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_hadron_sum" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_elec" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_pion" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_pion_3prong" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_pi0" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_kaon" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_daughter_k0" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau daughter" />
+    </hist> 
+    <hist key="DPhi_tau_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau had" />
+    </hist> 
+    <hist key="DPhi_truth_reco_mu_lep_lep" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_truth_reco_elec_lep_lep" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_truth_reco_had_had" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_truth_reco_pi_nu_had_had" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_truth_reco_lep_lep_had" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_truth_reco_had_lep_had" name="" title="">
+        <Xaxis bin="1200" min="-9.0" max="3.0" title="#Delta#phi truth reco" />
+    </hist> 
+    <hist key="DPhi_tau_lep_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau had" />
+    </hist> 
+    <hist key="DPhi_tau_lep" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#Delta#phi tau had" />
+    </hist> 
+    <hist key="Phi_acop_tau_tau" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi acop tau tau" />
+    </hist> 
+    <hist key="Phi_acop_lep_tau_tau" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi acop tau tau" />
+    </hist> 
+    <hist key="Phi_acop_lep_had_tau_tau" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi acop tau tau" />
+    </hist> 
+    <hist key="Phi_acop_had_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi had had" />
+    </hist>     
+    <hist key="Phi_acop_lep_lep" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi had had" />
+    </hist>     
+    <hist key="Phi_acop_lep_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi had had" />
+    </hist>     
+    <hist key="Phi_truth_had_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi star truth had had" />
+    </hist> 
+    <hist key="Phi_truth_lep_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi star truth had had" />
+    </hist> 
+    <hist key="Phi_truth_lep_lep" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="#phi star truth had had" />
+    </hist> 
+    <hist key="Phi_reco_had_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="phi star reco had had" />
+    </hist> 
+    <hist key="Phi_reco_lep_lep" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="phi star reco had had" />
+    </hist> 
+    <hist key="Phi_reco_lep_had" name="" title="">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="phi star reco had had" />
+    </hist> 
+    <hist key="DPhi_sin_theta_truth_reco_had_had" name="" title="dphi sin thetatstareta truth reco had had">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="" />
+    </hist> 
+    <hist key="DPhi_sin_theta_truth_reco_lep_lep" name="" title="dphi sin thetatstareta truth reco had had">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="" />
+    </hist> 
+    <hist key="DPhi_sin_theta_truth_reco_lep_had" name="" title="dphi sin thetatstareta truth reco had had">
+        <Xaxis bin="1000" min="-7.0" max="3.0" title="" />
+    </hist> 
+    <hist key="DPhi_phi_acop_truth_had_had" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="DPhi truth obs" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop truth" />
+    </hist>  
+    <hist key="DPhi_phi_acop_truth_lep_lep" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="DPhi truth obs" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop truth" />
+    </hist>  
+    <hist key="DPhi_phi_acop_truth_lep_had" name="" title="">
+        <Xaxis bin="100" min="-7." max="3." title="DPhi truth obs" />
+	<Yaxis bin="100" min="-7." max="3." title="Phi acop truth" />
+    </hist>  
+
+</histograms>

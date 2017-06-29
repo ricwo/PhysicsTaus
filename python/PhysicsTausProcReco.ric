@@ -1,0 +1,302 @@
+import os
+import sys
+import re
+
+import PhysicsBase.PhysicsBaseConfig as physicsBase
+import PhysicsTaus.PhysicsTausConfig as physicsConfig
+import PhysicsTaus.PhysicsTausCuts   as physicsCuts
+import PhysicsTaus.PhysicsTausBase   as physicsTauBase
+
+from PhysicsTaus.PhysicsTausConfig  import CutItem
+from PhysicsTaus.PhysicsTausConfig  import getCandName
+
+clog = physicsConfig.getLog(os.path.basename(__file__))
+
+#========================================================================================
+# Configuration for algorithms
+#========================================================================================
+def prepareJobConfig(ROOT, options):
+
+    clog.info('Prepare python configuration...')
+
+    prep_algs = [getPrepReco('prepReco', options)]
+    plot_algs = []
+    
+    #-------------------------------------------------------------------------
+    # Configure event plotting algorithm
+    #
+    plot_algs += [getPlotEventAlgs('plotEventAlgs', options)]
+
+    #-------------------------------------------------------------------------
+    # Configure top level alg
+    #
+    top_algs = prep_algs
+        
+    top_algs += [getRunNexus('runNexus', options, plot_algs)]
+
+    run = physicsTauBase.prepareReadModule(ROOT, options)
+    run.AddTopAlg('topAlg', top_algs)
+
+    clog.info('Finished python configuration: process up to %d event(s)' %options.nevent)
+    return run
+
+#========================================================================================
+def getPlotEventAlgs(name, options):
+
+    plot_event  = physicsBase.AlgConfig('plotEvent', 'PlotEvent')
+    plot_event.SetKey('DirName',     '')
+    plot_event.SetKey('Debug',       options.debug)
+    plot_event.SetKey('KeyHist',     'PlotEventHistKey')
+    plot_event.SetKey('ComputeMll',  'yes')
+
+    print_event  = physicsBase.AlgConfig('printEvent', 'PrintEvent')
+    print_event.SetKey('PrintRecoEvent',    options.print_reco_event)
+    print_event.SetKey('PrintCandEvent',    options.print_cand_event)
+    plot_event  = physicsBase.AlgConfig('plotEvent', 'PlotEvent')
+    plot_event.SetKey('DirName',     'taus')
+    plot_event.SetKey('Debug',       options.debug)
+    plot_event.SetKey('KeyHist',     'PlotEventHistKey')
+    plot_event.SetKey('ComputeMll',  'yes')
+
+#    event_tau_cuts  = getEventTauCuts()
+    event_cuts = getEventCuts()
+    object_tau_cuts = getTauCuts()
+    object_truth_tau_cuts = getTruthTauCuts()
+    object_truth_elec_cuts = getTruthElecCuts()
+    object_truth_muon_cuts = getTruthMuonCuts()
+    object_muon_cuts = getMuonCuts()
+    object_elec_cuts = getElecCuts()
+    object_jet_cuts = getJetCuts()
+    object_elec_trig_cuts = getElecTrigCuts()
+    object_muon_trig_cuts = getMuonTrigCuts()
+
+    physicsCuts.addCuts(plot_event, 'CutEvent', event_cuts)
+    physicsCuts.addCuts(plot_event, 'CutTau', object_tau_cuts)
+    physicsCuts.addCuts(plot_event, 'CutTruthTau', object_truth_tau_cuts)
+    physicsCuts.addCuts(plot_event, 'CutTruthElec', object_truth_elec_cuts)
+    physicsCuts.addCuts(plot_event, 'CutTruthMuon', object_truth_muon_cuts)    
+    physicsCuts.addCuts(plot_event, 'CutElec', object_elec_cuts)
+    physicsCuts.addCuts(plot_event, 'CutMuon', object_muon_cuts)
+    physicsCuts.addCuts(plot_event, 'CutJet', object_jet_cuts)
+    physicsCuts.addCuts(plot_event, 'CutElecTrig', object_elec_trig_cuts)
+    physicsCuts.addCuts(plot_event, 'CutMuonTrig', object_muon_trig_cuts)
+
+    algs = [plot_event, print_event]
+    chain = physicsCuts.getRunChain(name, algs=algs)
+    chain.SetKey('DirName',     name)
+    chain.SetKey('Debug',       options.debug)
+    chain.SetKey('Print',       'no')
+    chain.SetKey('DoTimer',     options.do_timer)
+
+    return chain
+
+#========================================================================================
+def getPrintEventAlg(name, options):
+
+
+    return print_event
+
+#========================================================================================
+def getPrepReco(name, options):
+
+    var_weights = ['MCWeightOrg']
+    
+    clog.info('getPrepReco - list of weights: %s' %var_weights)
+
+    alg = physicsBase.AlgConfig(name, 'PrepReco')
+    alg.SetKey('Debug',         options.debug)
+    alg.SetKey('Print',         'yes')
+    alg.SetKey('DoLepIdFilter', 'yes')
+    alg.SetKey('AddLeptonMass', 'yes')
+    alg.SetKey('Weights',       ','.join(var_weights))
+    alg.SetKey('CopyName',      'loose/Count')
+    alg.SetKey('DoCopy',        'yes')
+        
+    if options.no_weight:
+        alg.SetKey('NoWeight', 'yes')
+
+    return alg
+
+#========================================================================================
+def getRunNexus(name, options, algs=None, do_nexus_file=False):
+
+    chain = physicsCuts.getRunChain(name, algs=algs, cuts=None)
+    chain.SetKey('DirName',     '')
+    chain.SetKey('Debug',       options.debug)
+    chain.SetKey('Print',       options.debug)
+    chain.SetKey('DoTimer',     options.do_timer)
+
+    alg = physicsBase.AlgConfig(name, 'RunNexus')    
+    alg.SetKey('Print',    options.debug)
+    alg.SetKey('Debug',    options.debug)
+    alg.SetKey('DirName',  '')    
+    alg.SetKey('DirName0', 'data')
+    alg.SetKey('VarName',  'MCChannel')
+    alg.SetKey('AlgName',   chain.GetAlgName())
+    
+    alg.AddAlg(chain)
+
+    if do_nexus_file and options.output and options.output.count('.root'):
+        alg.SetKey('FileKey', '%s-' %options.output.partition('.root')[0])
+        alg.SetKey('DoFile',  'yes')
+
+    return alg
+
+#========================================================================================
+# Cut configurations
+#========================================================================================
+def getCutValue(cuts, name, default):
+
+    if type(cuts) != dict:
+        return default
+
+    try:
+        return cuts[name]
+    except KeyError:
+        return default    
+
+#========================================================================================
+def getEventCuts():
+
+    cuts  = []
+#    cuts += [CutItem('CutNLepton', 'NLepton > 0')]
+#    cuts += [CutItem('CutNTau', 'NTau > 1')]
+
+    
+    return cuts
+
+#========================================================================================
+def getEventTauCuts():
+
+    cuts  = []
+#    cuts += [CutItem('CutNTau', 'NTau > 1')]
+    
+    return cuts
+
+#========================================================================================
+def getElecTrigCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutTrigPt',   'Pt > 27.0e3')]
+    cuts += [CutItem('CutTrigElec', 'match_HLT_e26_lhtight_iloose > 0 || match_HLT_e60_lhmedium > 0 || match_HLT_e140_lhloose > 0')]
+
+    return cuts
+
+#========================================================================================
+def getMuonTrigCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutTrigPt',   'Pt > 27.0e3')]
+    cuts += [CutItem('CutTrigMuon', 'match_HLT_mu26_imedium > 0 || match_HLT_mu50 > 0')]
+
+    return cuts
+
+#========================================================================================
+def getChargedPionCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutChargedPion', 'PDG == 211', abs = True)]
+    
+    return cuts
+#========================================================================================
+def getHadronCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutChargedPion', 'PDG == 211 || PDG == 111 || PDG == 321', abs = True)]
+    
+    return cuts
+
+#========================================================================================
+def getTruthTauCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutTruthTau', 'PDG == 15', abs = True)]
+#    cuts += [CutItem('CutStatusTau', 'Status == 1')]
+    
+    return cuts
+
+#========================================================================================
+def getTruthCuts():
+
+    cuts  = []
+#    cuts += [CutItem('CutEta',      'Eta < 2.5',                 abs=True)]
+
+    return cuts
+
+
+#========================================================================================
+def getElecCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutEta',      'Eta < 2.47',                 abs=True)]
+    cuts += [CutItem('CutEtaCrack', 'Eta < 1.37 || Eta > 1.52', abs=True)]
+    cuts += [CutItem('CutPt',       'Pt   > 1.0e4')]
+    cuts += [CutItem('CutIso',      'isolationLoose == 1')]
+    
+    return cuts
+#========================================================================================
+def getTruthElecCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutPDG',      'PDG == 11 || PDG == -11',                  )]
+    
+    return cuts
+#========================================================================================
+def getTruthMuonCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutPDG',      'PDG == 13 || PDG == -13',                 )]
+
+    return cuts
+
+#========================================================================================
+def getMuonCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutEta',      'Eta  < 2.5', abs=True)]
+    cuts += [CutItem('CutPt',       'Pt   > 1.0e4')]
+    cuts += [CutItem('CutIso',      'isolationLoose == 1')]
+
+    return cuts
+
+#========================================================================================
+def getTauCuts():
+
+    cuts  = [] 
+    cuts += [CutItem('CutEta', 'Eta < 2.5', abs=True)]    
+    cuts += [CutItem('CutPt',  'Pt  > 2.0e4')]
+    cuts += [CutItem('CutNTrack',  'NTrack == 1. || NTrack == 3.')]
+    cuts += [CutItem('CutJetBDTID',  'JetBDTSigMedium == 1.')]
+ 
+    return cuts
+
+#========================================================================================
+def getHadronicTauCuts():
+
+    cuts  = [] 
+    cuts += [CutItem('CutEta', 'Eta < 2.5', abs=True)]    
+    cuts += [CutItem('CutPt',  'Pt  > 2.0e4')]
+    cuts += [CutItem('CutNTrack',  'NTrack == 1. || NTrack == 3.')]
+    cuts += [CutItem('CutJetBDTSigLoose',  'JetBDTSigLoose')]
+    cuts += [CutItem('CutIsHadronicTau', 'isHadronicTau')]
+ 
+    return cuts
+
+#========================================================================================
+def getJetCuts():
+
+    cuts  = [] 
+    cuts += [CutItem('CutEta', 'Eta < 4.5', abs=True)]    
+    cuts += [CutItem('CutPt',  'Pt  > 2.5e4')]
+ 
+    return cuts
+
+#========================================================================================
+def getBJetCuts():
+
+    cuts  = []
+    cuts += [CutItem('CutBTagEta', 'Eta < 2.4', abs=True)]
+    cuts += [CutItem('CutBTagMV2', 'BTagMV2c20 > -0.0436')]
+    
+    return cuts
+

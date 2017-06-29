@@ -1,0 +1,94 @@
+##############################################################################################################################################
+##Format                                                                                                                                 ##
+#DatasetID : Xsection(pb) : K-factor : Filtering Efficiency : Uncertainty :   Mass : Sample Priority :  Generator : ProcessInfo :Simulation ##
+##############################################################################################################################################
+
+ 341271           0.2315               1         1.0    --    -999   1     aMC@NLO+Herwig++                        ttH->allhad+H  Full  
+ 341270           0.2234               1         1.0    --    -999   1     aMC@NLO+Herwig++                         ttH->ljets+H  Full  
+ 341177           0.0536               1         1.0    --    -999   1     aMC@NLO+Herwig++                            ttH->ll+H  Full  
+
+ 342170           0.0536          0.0632      0.0632    --    -999   2     aMC@NLO+Herwig++                      ttH->ll+Htautau  Full  
+ 342171           0.2234          0.0632      0.0632    --    -999   2     aMC@NLO+Herwig++                   ttH->ljets+Htautau  Full  
+ 342172           0.2315          0.0632      0.0632    --    -999   2     aMC@NLO+Herwig++                  ttH->allhad+Htautau  Full  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

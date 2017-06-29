@@ -1,0 +1,3 @@
+bkg_keys: tops, rare, vv, ttw, ttz, vjets
+sig_keys: tth
+oth_keys: total_ew

@@ -1,0 +1,83 @@
+// This is -*- c++ -*-
+#ifndef ANP_PLOTEVENT_H
+#define ANP_PLOTEVENT_H
+
+/**********************************************************************************
+ * @Package: PhysicsTaus
+ * @Class  : PlotEvent
+ * @Author : Rustem Ospanov, Ricardo Woelker
+ *
+ * @Brief  :
+ * 
+ *  Prepare and plot event
+ * 
+ **********************************************************************************/
+
+// Common
+#include "PhysicsTaus/PlotBase.h"
+#include "PhysicsData/RecoEvent.h"
+
+// Local
+#include "PhysicsTaus/HistKey.h"
+#include "PhysicsTaus/CutBase.h"
+
+namespace Anp
+{
+  class PlotEvent: public virtual PlotBase, public virtual CutBase
+  {
+  public:
+
+    PlotEvent();
+    virtual ~PlotEvent() {}
+    
+    void PlotConf(const Registry &reg);
+    
+    bool PlotInit();
+
+    void PlotExec();
+
+    void PlotDone();
+
+  private:
+
+    template<class T> void SelectObjects(const std::vector<Ptr<T> > &ptrs, std::vector<Ptr<T> > &outs, CutFlow &cut);
+    
+    Ptr<CandEvent> PrepCandEvent(const RecoEvent &reco);
+
+    void FillCandEvent(CandEvent &cand);
+
+    void PlotCandEvent(CandEvent &cand);
+
+  private:
+
+    bool                        fComputeMll;
+
+    Ptr<CutFlow>                fCutEvent;
+    Ptr<CutFlow>                fCutElec;
+    Ptr<CutFlow>                fCutJet;
+    Ptr<CutFlow>                fCutMuon;
+    Ptr<CutFlow>                fCutTau;
+
+    Ptr<HistKey>                fHistEvent;
+    Ptr<HistKey>                fHistMuon;
+    Ptr<HistKey>                fHistElec;
+    Ptr<HistKey>                fHistTau;
+
+    TH1                        *hMll;
+  };
+
+  //==============================================================================
+  template<class T> inline void PlotEvent::SelectObjects(const std::vector<Ptr<T> > &ptrs, 
+							 std::vector<Ptr<T> > &outs, 
+							 CutFlow &cut)
+  {
+    for(const Ptr<T> &ptr: ptrs) {
+      
+      if(cut.PassCut(ptr.ref())) {
+	outs.push_back(ptr);
+      }
+    }
+  }
+}
+
+#endif

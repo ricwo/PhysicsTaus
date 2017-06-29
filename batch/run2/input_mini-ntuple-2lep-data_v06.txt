@@ -1,0 +1,17 @@
+   248979060 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0000_out.root
+   208055469 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0001_out.root
+   277322612 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0002_out.root
+   205409947 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0003_out.root
+   225279182 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0004_out.root
+   136915433 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0005_out.root
+   262066873 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0006_out.root
+   174019491 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0007_out.root
+   285943897 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0008_out.root
+   288618112 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0009_out.root
+   314026916 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0010_out.root
+   131147409 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0011_out.root
+   339488793 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0012_out.root
+   256916366 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0013_out.root
+   263716631 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0014_out.root
+   325889315 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0015_out.root
+   261483147 /eos/atlas/user/r/rustem/ntuples/mini-ntuple-2lep-2016-04-06-data_v06/job_0016_out.root
